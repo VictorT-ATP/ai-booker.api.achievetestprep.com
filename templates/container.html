@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+      integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls"
+      crossorigin="anonymous"
+    />
+      <link
+              rel="stylesheet"
+              href="static/style.css"
+      />
+    <title>{{ title }}</title>
+  </head>
+  <body>
+  <div id="layout" class="content pure-g">
+      <div class="pure-u-1"><h3 class="px-md">AI Booker</h3></div>
+      <div class="pure-g">
+      <nav class="pure-menu">
+
+          <ul class = "pure-menu-list">
+              <li class="pure-menu-item"><a class= "pure-menu-link" href="/">Dashboard</a></li>
+              <li class="pure-menu-item"><a class= "pure-menu-link" href="/leads">Leads to Contact</a></li>
+              <li class="pure-menu-item"><a class= "pure-menu-link" href="/batch_service">Batch Service</a></li>
+              <li class="pure-menu-item"><a class= "pure-menu-link" href="/manual_exec">Manual Contact</a></li>
+              <li class="pure-menu-item"><a class= "pure-menu-link" href="/conversations_log">Conversations Log</a></li>
+              <li class="pure-menu-item"><a class= "pure-menu-link" href="/statistics">Statistics</a></li>
+              <li class="pure-menu-item"><a class= "pure-menu-link" href="/settings">Settings</a></li>
+          </ul>
+      </nav>
+      <h1>This is {{ title }}</h1>
+        {% block body %} {% endblock %}
+      </div>
+  </div>
+  </body>
+</html>
